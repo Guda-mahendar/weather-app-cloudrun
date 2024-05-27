@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather app on cloudrun</title>
+    <title>Weather app on Cloud Run</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <style>
         body {
@@ -24,15 +24,46 @@
 
         .navbar-brand {
             color: #ffffff; /* White text color for Navbar brand */
+            font-weight: bold; /* Make the navbar brand text bold */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff; /* White text color for navbar links */
+            font-weight: normal; /* Reset font weight to normal */
+        }
+
+        .navbar-nav .nav-link.bold-black {
+            font-weight: bold; /* Make specific navbar links bold */
+            color: #000000; /* Black text color for specific navbar links */
+        }
+
+        .navbar-nav .nav-link.bold-black:hover {
+            color: #000000; /* Black text color for specific navbar links on hover */
         }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">
-            Weather app on Cloud run
-        </a>
-        
+        <a class="navbar-brand" href="#">Weather app on Cloud Run</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link bold-black" href="https://drive.google.com/file/d/1XsUAI1Z6SCu0uCfrSNpdp3xrUeof6ci5/view?usp=share_link
+                    " target="_blank">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bold-black" href="https://www.linkedin.com/in/mahendarguda/" target="_blank">LinkedIn</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link bold-black" href="https://github.com/Guda-mahendar" target="_blank">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bold-black" href="https://chatme-imkfb5nsca-uc.a.run.app" target="_blank">ChatBot Project</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container mt-5">
